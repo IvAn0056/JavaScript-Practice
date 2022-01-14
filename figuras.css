@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("./images/cool-background.png");
+}
+header{
+    height: 90px;
+    display: grid;
+    place-items: center;
+    background-color: #181D27;
+    color: aliceblue;
+}
+header h1{
+    margin-bottom: 0;
+}
+header p{
+    margin-top: 4px;
+}
+.principalContainer{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 16px;
+}
+.secundaryContainer{
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+.figureContainer{
+    width: 33.3%;
+    height: 400px;
+    margin: 8px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.25);
+    
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.title img{
+    width: 40px;
+    margin-right: 4px;
+}
+.figureContainer form input{
+    width: 50px;
+}
+#l1{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+}
+.input-m{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.button button{
+    padding: 8px;
+    background-color: #69B578;
+    border: none;
+    color: aliceblue;
+    border-radius: 4px;
+    width: 140px;
+    height: 40px;
+    font-weight: bold;
+}
+.button button:nth-child(1){
+    margin-right: 12px;
+}
