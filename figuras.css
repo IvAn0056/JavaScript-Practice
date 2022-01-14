@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     background-image: url("./images/cool-background.png");
+    font-family: 'Nunito Sans', sans-serif;
 }
 header{
     height: 90px;
@@ -47,6 +48,10 @@ header p{
     width: 40px;
     margin-right: 4px;
 }
+.figureContainer form {
+    display: flex;
+    flex-direction: column;
+}
 .figureContainer form input{
     width: 50px;
 }
@@ -81,4 +86,10 @@ header p{
 }
 .button button:nth-child(1){
     margin-right: 12px;
+}
+#resultCuadrado, #resultTriangulo, #resultCirculo{
+    margin-top: 24px;
+    align-self: center;
+    font-weight: bold;
+    font-size: 28px;
 }
