@@ -4,12 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="figuras.css">
     <title>Fig. Geometricas</title>
 </head>
 <body>
-    <h1>
-        Figuras Geometricas
-    </h1>
+    <header>
+        <h1>Figuras Geometricas</h1>
+        <p>Primer actividad del taller práctico de JavaScript.</p>
+    </header>
+
+    <div class="principalContainer">
+        <div class="secundaryContainer">
+            <section class="figureContainer">
+                <div class="title">
+                    <img src="./images/forma-cuadrada-negra-redondeada.png" alt="square">
+                    <h2>Cuadrado:</h2>
+                </div>
+                <form action="">
+                    <div class="input">
+                        <label for="InCuadrado">Escribe el tamaño de cada lado del cuadrado.</label>
+                        <input type="number" id="InCuadrado" />
+                    </div>
+                    <div class="button">
+                        <button type="button" onclick="calcPerCuadrado()">Calcular Perimetro</button>
+                        <button type="button" onclick="calcAreaCuadrado()">Calcular Área</button>
+                    </div>
+                </form>
+            </section>
+        
+            <section class="figureContainer">
+                <div class="title">
+                    <img src="./images/triangulo.png" alt="square">
+                    <h2>Triángulo:</h2>
+                </div>
+                <form action="">
+                    <label id="l1">Escribe el tamaño de cada lado y de la base del triangulo.</label>
+                    <div class="input-m">
+                        <label for="lado1">Primer lado:</label>
+                        <input type="number" id="lado1" />
+                    </div>
+                    <div class="input-m">
+                        <label for="lado2">Segundo lado:</label>
+                        <input type="number" id="lado2" />
+                    </div>
+                    <div class="input-m">
+                        <label for="base">Base del triangulo:</label>
+                        <input type="number" id="base" />
+                    </div>
+                    <div class="input-m">
+                        <label for="altura">Altura del triangulo:</label>
+                        <input type="number" id="altura" />
+                    </div>
+                    <div class="button">
+                        <button type="button" onclick="calcPerTriangulo()">Calcular Perimetro</button>
+                        <button type="button" onclick="calcAreaTriangulo()">Calcular Área</button>
+                    </div>
+                </form>
+            </section>
+        
+            <section class="figureContainer">
+                <div class="title">
+                    <img src="./images/new-moon.png" alt="square">
+                    <h2>Circulo:</h2>
+                </div>
+                <form action="">
+                    <div class="input">
+                        <label for="radio">Escribe el radio del circulo:</label>
+                        <input type="number" id="radio" />
+                    </div>
+                    <div class="button">
+                        <button type="button" onclick="calcPerCirculo()">Calcular Perimetro</button>
+                        <button type="button" onclick="calcAreaCirculo()">Calcular Área</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    
 
     <script src="./figuras.js"></script>
 </body>
