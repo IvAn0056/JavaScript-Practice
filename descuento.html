@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Descuentos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        header {
+            display: grid;
+            place-items: center;
+        }
+        .principalContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .secundaryContainer{
+            width: 360px;
+            background-color: #64E3AE;
+            border-radius: 8px;
+            color:#f0f8ff;
+        }
+        .secundaryContainer h2{
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form input{
+            width: 40%;
+            height: 24px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            -moz-appearance: textfield;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-family: 'Nunito Sans', sans-serif;
+            border: none;
+            background-color: #e2e2e2;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .precioContainer{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, .2);
+            box-shadow: 0 5px 15px rgba(0,0,0,.25);
+            padding: 8px;
+        }
+        .descuentoContainer{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, .2);
+            box-shadow: 0 5px 15px rgba(0,0,0,.25);
+            padding: 8px;
+        }
+        .input{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .inputp img{
+            width: 24px;
+            position: absolute;
+            margin-left: 132px;
+        }
+        .inputd img{
+            width: 22px;
+            position: absolute;
+            margin-left: 138px;
+        }
+        button{
+            margin-top: 16px;
+            margin-bottom: 16px;
+            font-weight: bold;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 16px;
+            padding: 16px;
+            cursor: pointer;
+            background-color: #5BF0A3;
+            border: none;
+            border-radius: 8px;
+            color: aliceblue;
+        }
+        .total{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Descuentos App</h1>
+        <p>Segundo taller del curso de JavaScript</p>
+    </header>
+
+    <section class="principalContainer">
+        <div class="secundaryContainer">
+
+            <h2>Precio total a pagar aplicando descuento:</h2>
+
+        <form action="">
+            <div class="precioContainer">
+                <label for="precio">Escribe el precio del producto:</label>
+                <div class="input inputp">
+                    <input type="number" id="precio">
+                    <img src="./images/dollar-symbol.png" alt="dollar-symbol">
+                </div>
+            </div>
+            <div class="descuentoContainer">
+                <label for="descuento">Escribe el descuento del producto</label>
+                <div class="input inputd">
+                    <input type="number" id="descuento">
+                    <img src="./images/percent.png" alt="percent">
+                </div>
+            </div>
+            <button type="button" onclick="calcularTotalButton()" class="button">Calcular Total a Pagar</button>
+            <div class="total">
+                <label id="total"></label>
+            </div>
+        </form>
+
+        </div>
+    </section>
+
+    <script src="./descuento.js"></script>
+</body>
+</html>
