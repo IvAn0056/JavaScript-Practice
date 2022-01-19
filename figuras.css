@@ -4,13 +4,41 @@ body{
     background-image: url("./images/cool-background.png");
     font-family: 'Nunito Sans', sans-serif;
 }
-header{
+header {
     height: 90px;
-    display: grid;
-    place-items: center;
-    background-color: #181D27;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181d27;
+    color: #f0f8ff;
+  }
+  header .title1{
+      text-align: center;
+  }
+  header .navBar{
+    align-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin-right: 12px;
+  }
+  .navBar ul{
+    list-style: none;
+    display: flex;
+  }
+  .navBar ul li{
+    padding: 4px;
+  }
+  .navBar ul .home{
+    margin-right: 8px;
+  }
+  .navBar ul li a{
+    text-decoration: none;
     color: aliceblue;
-}
+    font-weight: bold;
+  }
+  .navBar ul li a img{
+    width: 22px;
+  }
 header h1{
     margin-bottom: 0;
 }
@@ -76,13 +104,15 @@ header p{
 }
 .button button{
     padding: 8px;
-    background-color: #69B578;
-    border: none;
-    color: aliceblue;
+    background-color: #64E3AE;
+    border: 1px solid aliceblue;
+    color: #181D27;
     border-radius: 4px;
     width: 140px;
-    height: 40px;
+    height: 50px;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
+    font-size: 14px;
 }
 .button button:nth-child(1){
     margin-right: 12px;
