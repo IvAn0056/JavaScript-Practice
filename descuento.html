@@ -1,155 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Descuentos</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Nunito Sans', sans-serif;
-        }
-        header {
-            display: grid;
-            place-items: center;
-        }
-        .principalContainer{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .secundaryContainer{
-            width: 360px;
-            background-color: #64E3AE;
-            border-radius: 8px;
-            color:#f0f8ff;
-        }
-        .secundaryContainer h2{
-            text-align: center;
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        form input{
-            width: 40%;
-            height: 24px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 20px;
-            -moz-appearance: textfield;
-            margin-top: 8px;
-            margin-bottom: 8px;
-            font-family: 'Nunito Sans', sans-serif;
-            border: none;
-            background-color: #e2e2e2;
-        }
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        .precioContainer{
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 16px;
-            border-radius: 8px;
-            background-color: rgba(255, 255, 255, .2);
-            box-shadow: 0 5px 15px rgba(0,0,0,.25);
-            padding: 8px;
-        }
-        .descuentoContainer{
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 16px;
-            border-radius: 8px;
-            background-color: rgba(255, 255, 255, .2);
-            box-shadow: 0 5px 15px rgba(0,0,0,.25);
-            padding: 8px;
-        }
-        .input{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .inputp img{
-            width: 24px;
-            position: absolute;
-            margin-left: 132px;
-        }
-        .inputd img{
-            width: 22px;
-            position: absolute;
-            margin-left: 138px;
-        }
-        button{
-            margin-top: 16px;
-            margin-bottom: 16px;
-            font-weight: bold;
-            font-family: 'Nunito Sans', sans-serif;
-            font-size: 16px;
-            padding: 16px;
-            cursor: pointer;
-            background-color: #5BF0A3;
-            border: none;
-            border-radius: 8px;
-            color: aliceblue;
-        }
-        .total{
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Nunito Sans", sans-serif;
+        background-image: url("./images/cool-background.png");
+      }
+      header {
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #181d27;
+        color: #f0f8ff;
+      }
+      header .title {
+        text-align: center;
+      }
+      header .navBar {
+        align-self: flex-end;
+        position: absolute;
+        right: 0;
+        margin-right: 12px;
+      }
+      .navBar ul {
+        list-style: none;
+        display: flex;
+      }
+      .navBar ul li {
+        padding: 4px;
+      }
+      .navBar ul .home {
+        margin-right: 8px;
+      }
+      .navBar ul li a {
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: bold;
+      }
+      .navBar ul li a img {
+        width: 22px;
+      }
+      header h1 {
+        margin-bottom: 0;
+      }
+      header p {
+        margin-top: 4px;
+      }
+      .principalContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .secundaryContainer {
+        width: 360px;
+        background-color: #64e3ae;
+        border-radius: 8px;
+        color: #181d27;
+        margin-top: 40px;
+      }
+      .secundaryContainer h2 {
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      form input {
+        width: 40%;
+        height: 24px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        -moz-appearance: textfield;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-family: "Nunito Sans", sans-serif;
+        border: none;
+        background-color: #e2e2e2;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      .precioContainer {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+        padding: 8px;
+      }
+      .descuentoContainer {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+        padding: 8px;
+      }
+      .input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .inputp img {
+        width: 22px;
+        position: absolute;
+        margin-left: 132px;
+      }
+      .inputd img {
+        width: 20px;
+        position: absolute;
+        margin-left: 138px;
+      }
+      button {
+        width: 82%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-weight: bold;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 24px;
+        padding: 16px;
+        cursor: pointer;
+        background-color: #5bf0a3;
+        border: 1px solid aliceblue;
+        border-radius: 8px;
+        color: #181d27;
+      }
+      .total {
+        width: 80%;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+        padding: 8px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 20px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
+      <div class="title">
         <h1>Descuentos App</h1>
         <p>Segundo taller del curso de JavaScript</p>
+      </div>
+      <nav class="navBar">
+        <ul>
+          <li class="home">
+            <a href="./index.html"><img src="./images/casa.png" alt="home" /></a>
+          </li>
+          <li><a href="./figuras.html">Figuras</a></li>
+          <li><a href="./promedio.html">Aritmética</a></li>
+          <li><a href="./descuento.html">Descuentos</a></li>
+          <li><a href="./credito.html">Credito</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="principalContainer">
-        <div class="secundaryContainer">
-
-            <h2>Precio total a pagar aplicando descuento:</h2>
+      <div class="secundaryContainer">
+        <h2>Precio total a pagar aplicando descuento:</h2>
 
         <form action="">
-            <div class="precioContainer">
-                <label for="precio">Escribe el precio del producto:</label>
-                <div class="input inputp">
-                    <input type="number" id="precio">
-                    <img src="./images/dollar-symbol.png" alt="dollar-symbol">
-                </div>
+          <div class="precioContainer">
+            <label for="precio">Escribe el precio del producto:</label>
+            <div class="input inputp">
+              <input type="number" id="precio" />
+              <img src="./images/dollar.png" alt="dollar-symbol" />
             </div>
-            <div class="descuentoContainer">
-                <label for="descuento">Escribe el descuento del producto</label>
-                <div class="input inputd">
-                    <input type="number" id="descuento">
-                    <img src="./images/percent.png" alt="percent">
-                </div>
+          </div>
+          <div class="descuentoContainer">
+            <label for="descuento">Escribe el descuento del producto</label>
+            <div class="input inputd">
+              <input type="number" id="descuento" />
+              <img src="./images/percentage-discount.png" alt="percent" />
             </div>
-            <button type="button" onclick="calcularTotalButton()" class="button">Calcular Total a Pagar</button>
-            <div class="total">
-                <label id="total"></label>
-            </div>
+          </div>
+          <button type="button" onclick="calcularTotalButton()" class="button">
+            Calcular
+          </button>
+          <div class="total">
+            <label>Total:</label>
+            <label id="total"></label>
+          </div>
         </form>
-
-        </div>
+      </div>
     </section>
 
     <script src="./descuento.js"></script>
-</body>
+  </body>
 </html>
