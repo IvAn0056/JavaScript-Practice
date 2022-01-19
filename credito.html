@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Credito</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-image: url("./images/cool-background.png");
+        font-family: "Nunito Sans", sans-serif;
+      }
+      header {
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #181d27;
+        color: #f0f8ff;
+      }
+      header .title{
+          text-align: center;
+      }
+      header .navBar{
+        align-self: flex-end;
+        position: absolute;
+        right: 0;
+        margin-right: 12px;
+      }
+      .navBar ul{
+        list-style: none;
+        display: flex;
+      }
+      .navBar ul li{
+        padding: 4px;
+      }
+      .navBar ul .home{
+        margin-right: 8px;
+      }
+      .navBar ul li a{
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: bold;
+      }
+      .navBar ul li a img{
+        width: 22px;
+      }
+      header h1 {
+        margin-bottom: 0;
+      }
+      header p {
+        margin-top: 4px;
+      }
+      section{
+        width: 100%;
+        display: grid;
+        place-items: center;
+        color: #181D27;
+      }
+      .principalContainer{
+        width: 450px;
+        margin-top: 50px;
+        padding: 12px;
+        background-color: rgba(255, 255, 255, .2);
+        box-shadow: 0 5px 15px rgba(0,0,0,.25);
+      }
+      .principalContainer h2{
+          text-align: center;
+      }
+      .principalContainer form{
+        display: flex;
+        flex-direction: column;
+      }
+      .principalContainer form label{
+        margin-bottom: 8px;
+      }
+      .principalContainer form input{
+        font-family: "Nunito Sans", sans-serif;
+        height: 28px;
+        margin-bottom: 16px;
+      }
+      button{
+        width: 100%;
+        height: 55px;
+        align-self: center;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        background-color: #5BF0A3;
+        border: 1px solid aliceblue;
+        border-radius: 8px;
+        color: #181D27;
+        margin-top: 18px;
+      }
+      #result{
+          align-self: center;
+          margin-top: 20px;
+          font-weight: bold;
+          font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="title">
+            <h1>Análisis Salarial</h1>
+            <p>Cuarto taller de JavaScript</p>
+        </div>
+        <nav class="navBar">
+            <ul>
+                <li class="home"><a href="./index.html"><img src="./images/casa.png" alt="home"></a></li>
+                <li><a href="./figuras.html">Figuras</a></li>
+                <li><a href="./promedio.html">Aritmética</a></li>
+                <li><a href="./descuento.html">Descuentos</a></li>
+                <li><a href="./credito.html">Credito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+      <div class="principalContainer">
+        <h2>Calcular capacidad de credito</h2>
+        <form action="">
+          <label for="it">Escribe tu ingreso total:</label>
+          <input type="number" id="it" />
+          <label for="gf">Escribe tus gastos fijos:</label>
+          <input type="number" id="gf" />
+          <button type="button" onclick="creditoButton()">Calcular</button>
+          <label for="" id="result"></label>
+        </form>
+      </div>
+    </section>
+    <script src="./credito.js"></script>
+  </body>
+</html>
